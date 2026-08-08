@@ -3,7 +3,7 @@ package main
 import (
 	"post-api/config"
 	"post-api/handlers"
-
+	"os"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
@@ -14,7 +14,7 @@ func main() {
 	r := gin.Default()
 	setupRoutes(r)
 	port := os.Getenv("PORT")
-	r.Run(":8080")
+	r.Run(":" + port)
 }
 
 func setupRoutes(r *gin.Engine) {
