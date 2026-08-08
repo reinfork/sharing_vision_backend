@@ -13,6 +13,7 @@ func main() {
 	config.ConnectDB()
 	r := gin.Default()
 	setupRoutes(r)
+	port := os.Getenv("PORT")
 	r.Run(":8080")
 }
 
