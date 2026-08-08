@@ -22,7 +22,7 @@ func setupRoutes(r *gin.Engine) {
 	article := r.Group("/article")
 	{
 		article.POST("/", handlers.CreateArticle)
-		article.GET("/:limit/:offset", handlers.GetArticles)
+		article.GET("/:id/:offset", handlers.GetArticles)
 		article.GET("/:id", handlers.GetArticle)
 		article.PUT("/:id", handlers.UpdateArticle)
 		article.DELETE("/:id", handlers.DeleteArticle)

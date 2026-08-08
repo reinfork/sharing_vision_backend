@@ -24,7 +24,7 @@ func CreateArticle(c *gin.Context) {
 }
 
 func GetArticles(c *gin.Context) {
-	limit, _ := strconv.Atoi(c.Param("limit"))
+	limit, _ := strconv.Atoi(c.Param("id"))
 	offset, _ := strconv.Atoi(c.Param("offset"))
 	if limit <= 0 {
 		limit = 10
