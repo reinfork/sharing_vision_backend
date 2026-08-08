@@ -12,6 +12,10 @@ A backend app for post article. Used Golang (Gin) as framework.
 
 **Database**: MySQL (hosted via aiven)
 
+## Endpoint Documentation##
+Please refer to the postman collection
+https://reinauth-900831.postman.co/workspace/Val's-Workspace~c2ef92cf-e373-4b79-87da-bee1a3cfc962/collection/47723930-5f019c6c-c2ff-4d69-afbb-21c74f6fe8c5?action=share&creator=47723930
+
 ## Prerequisites
 To run this project locally, you will need:
 * [Go](https://go.dev/dl/) installed (v1.18 or higher)
